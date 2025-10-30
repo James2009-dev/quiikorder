@@ -34,3 +34,4 @@ export  function  Footer () { //this follows paschal-casing i.e first letter of 
     </footer>
   );
 }
+//to allow for google signin on ur website google cloud console,create new acc,go to api services,oAuth then create new and finish

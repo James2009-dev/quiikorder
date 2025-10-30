@@ -1,13 +1,16 @@
 import Image from "next/image";
+import { RxButton } from "react-icons/rx";
 
-export default function Home() {
+export default function Home() {    // change the title in layout.js
   return (
     <main className=" flex flex-col items-center justify-center p-4">
       <section className="max-w-2xl w-full text-center py-12 px-6 bg-white/80 rounded-2xl shadow-lg">
         <h1 className="text-5xl  mb-4">QWIIKORDER</h1>
-        
+        <RxButton/>
           <button
-            className="mt-6 px-8 py-3 bg-fuchsia-500 text-white border-2 border-white rounded-lg font-semibold shadow transition-all duration-300 transform hover:bg-white hover:text-fuchsia-500 hover:border-fuchsia-500 hover:scale-110"
+            className="mt-6 px-8 py-3 bg-fuchsia-500 text-white border-2 border-white rounded-lg font-semibold shadow transition-all
+             duration-300 transform hover:bg-white hover:text-fuchsia-500 
+             hover:border-fuchsia-500 hover:scale-110"
           >
             Fuchsia Button
           </button>

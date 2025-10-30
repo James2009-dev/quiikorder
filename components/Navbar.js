@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 
 
+
 export function Navbar() {
         const [menuOpen, setMenuOpen] = useState(false);
         const toggleMenu = () => {
@@ -15,9 +16,9 @@ export function Navbar() {
      <div className="flex justify-between items-center h-[50px] pt-3 px-5 ">
         <h1 className="text-2xl font-bold text-blue-500">QwiikOrder</h1>
         <ul className="hidden md:flex gap-10 md:font-semibold md:cursor-pointer">
-            <li>Home</li>
-            <li>Orders</li>
-            <li>OrderList</li>
+            <Link href="/"><li>Home</li></Link>
+            <Link href="/dashboard/new-order"><li>New-Order</li></Link>
+            <Link href="/dashboard/order-list"><li>OrderList</li></Link>
         </ul>
         <div className="hidden md:flex gap-3">
             <Link href="/auth/login"><button className="w-[60px] h-[30px] rounded cursor-pointer text-white bg-blue-500">Login</button></Link>
