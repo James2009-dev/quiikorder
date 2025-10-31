@@ -1,7 +1,7 @@
+
 import { auth, signIn } from "@/auth";
 import { TextField } from "@mui/material";
 import { FcGoogle } from "react-icons/fc";
-
 
 export default async function Login () {
       const session = await auth()
@@ -23,7 +23,6 @@ export default async function Login () {
                </div>
             </form>
              <p className="text-center text-gray-700">Or sign in with</p>
-             
              <form action={async()=>{
                              "use server"
                        await signIn("google")
@@ -35,8 +34,7 @@ export default async function Login () {
              </form>
 
           </div>
-
+           
         </main>           
     )
 }
-// checkout chakra and shadcn ui for coding easy
